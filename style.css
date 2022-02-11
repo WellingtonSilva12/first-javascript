@@ -1,0 +1,121 @@
+.gradiente {
+    background: linear-gradient(35deg, #111111, #0F1923, #FF4655, #FF4655);
+    background-size: 400% 400%;
+    animation: colors 30s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.img:hover {
+    animation: bounce .3s;
+}
+
+@keyframes bounce {
+    10%,
+    12%,
+    16% {
+        transform: translateY(-30px);
+    }
+    25%,
+    27%,
+    31% {
+        transform: translateY(30x);
+    }
+}
+
+.title {
+    text-align: center;
+    visibility: visible;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: 'CodecPro', Arial, sans-serif;
+    line-height: 1.1;
+    font-weight: 700;
+    background-position: center;
+    border-color: transparent;
+    border-style: solid;
+    font-size: 48px;
+}
+
+.text {
+    text-align: center;
+    visibility: visible;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'CodecPro', Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    font-size: 16px;
+}
+
+#botao {
+    text-align: center
+}
+
+.bt {
+    visibility: visible;
+    text-align: center;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 5;
+    border: 0;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'CodecPro', Arial, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    border-width: 10px;
+    border-radius: 8px;
+    background-color: #001ce6;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.rodape {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'CodecPro', Arial, sans-serif;
+    font-size: 10px;
+}
